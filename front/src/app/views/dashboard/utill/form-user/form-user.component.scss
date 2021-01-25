@@ -1,0 +1,22 @@
+.content {
+    width: 60vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    h1 {
+        margin-bottom: 50px;
+    }
+    .registrar {
+        width: 100%;
+        margin-top: 98px;
+        height: max-content;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .listar {
+        height: 200px;
+        width: 100%;
+    }
+}

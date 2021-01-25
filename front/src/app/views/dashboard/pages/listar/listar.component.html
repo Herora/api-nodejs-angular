@@ -1,0 +1,31 @@
+<div class="content">
+    <div class="listar">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <!-- <th scope="col">id</th> -->
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Fecha/nacimiento</th>
+                    <th scope="col">Genero</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Sede</th>
+                    <th scope="col">Edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of data">
+                    <td>{{item.nombre}}</td>
+                    <td>{{item.cedula}}</td>
+                    <td>{{item.telefono}}</td>
+                    <td>{{item.fecha_nac}}</td>
+                    <td>{{item.genero}}</td>
+                    <td>{{item.cliente}}</td>
+                    <td>{{item.sede}}</td>
+                    <td>{{item.edad}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

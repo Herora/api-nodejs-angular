@@ -1,0 +1,38 @@
+<div class="content">
+    <div class="registrar">
+        <h1>{{header}}</h1>
+        <form [formGroup]="user" id="form-user">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <input formControlName="nombre" type="text" class="form-control" id="Nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input formControlName="cedula" type="number" class="form-control" id="Cédula" placeholder="Cédula" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <input formControlName="telefono" type="number" class="form-control" id="Teléfono" placeholder="Teléfono" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <input formControlName="fech_naci" type="date" class="form-control" id="Fecha" placeholder="Fecha de nacimiento aaaa-mm-dd" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <select name="genero" id="genero" class="form-control" id="genero" formControlName="genero">
+                        <option value="">Genero</option>
+                        <option  *ngFor="let item of generos" value="{{item.value}}">{{item.label}}</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <input formControlName="cliente" type="text" class="form-control" id="inputAddress" placeholder="Cliente para el que trabaja" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <select name="genero" id="genero" class="form-control" id="inputAddress" formControlName="sede">
+                        <option value="">Sede</option>
+                        <option *ngFor="let item of sede" value="{{item.value}}">{{item.label}}</option>
+                    </select>
+                </div>
+            </div>
+            <button (click)="send()" type="submit" class="btn btn-primary">registrar</button>
+        </form>
+    </div>
+</div>

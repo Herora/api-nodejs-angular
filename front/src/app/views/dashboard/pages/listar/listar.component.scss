@@ -1,0 +1,19 @@
+.content {
+    width: 60vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    h1 {
+        margin-bottom: 50px;
+    }
+    .listar {
+        width: 100%;
+        margin-top: 98px;
+        height: max-content;
+        padding: 20px;
+        table {
+            border-radius: 20px;
+        }
+    }
+}

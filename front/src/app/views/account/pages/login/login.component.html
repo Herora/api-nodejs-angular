@@ -1,0 +1,17 @@
+<div class="parent-cms">
+    <div class="container parentflex">
+        <div class="formulario ">
+            <form>
+                <div class="form-group">
+                    <label for="name">Usuario</label>
+                    <input name="user" type="user" class="form-control" id="name" placeholder="" [(ngModel)]="usuario">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Contraseña</label>
+                    <input name="usuario" type="text" class="form-control" id="pass" placeholder=" " [(ngModel)]="clave">
+                </div>
+                <button (click)="login()" type="button" class="btn btn-success  col-12">Inicia Sesion</button>
+            </form>
+        </div>
+    </div>
+</div>
